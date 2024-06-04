@@ -136,7 +136,7 @@ function send_email() {
             else {
               document.querySelector('#compose-subject').value = 'Re: '+ subject;
             }
-            document.querySelector('#compose-body').value = ` On ${email.timestamp} ${email.sender} wrote: ${email.body}`;
+            document.querySelector('#compose-body').value = ` On ${email.timestamp} ${email.sender} wrote: \n${email.body}`;
           });
           document.querySelector('#mail-view').append(reply_btn);
         }
